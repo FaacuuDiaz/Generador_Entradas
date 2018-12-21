@@ -13,5 +13,6 @@ Antes de la ejecucion del programa se debe verificar que las imagenes de los cod
 nombre-apellido.formato
 
 Si no se respeta el formato se incorporará el caracter separador al nombre del invitado.
+Tambien se puede seleccionar que tipo de imagen de fondo se quiere que se tenga la entrada, por lo que la imagen debera ser de minimo 600X700 pixels ya que la imagen se reducira a ese tamaño para poder manejarse de forma mas comoda desde el celular. Estas imagenes solamente se buscaran en la carpeta del repositorio ImagenesFondo, por lo que si queremos agregar un nuevo fondo a la imagen solo debemos descargar una imagen y ponerla en la carpeta, luego el programa esperara a la elección del usuario para poner el fondo
 
 Una vez finalizado el archivo se generará automaticamente una carpeta con las entradas generadas las cuales son archivos jpg con el nombre y apellido que se establecio en la imagen QR
