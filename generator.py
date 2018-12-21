@@ -27,7 +27,7 @@ print('s/n')
 res=input()
 header=''
 if(res.lower() == 's'):
-	header = input()
+	header = input('Ingrese el nombre del titulo de la entrada\n')
 
 cant=0
 print("Elegi el numero del tipo de Fuente que queres en las imagenes")
@@ -76,12 +76,13 @@ for qr in codigos:
 	draw = ImageDraw.Draw(reducida)
 	font = ImageFont.truetype(path,80) #los parametros son el path de la fuente y el tamaño de la fuente
 	font2 = ImageFont.truetype(path_nombre,50)
+	font3 = ImageFont.truetype(path_nombre,30)
 	font_header = ImageFont.truetype(path,70)
 	"""Textos que se ingresaran en la entrada"""
 	draw.text((0, 5), header, font=font_header, fill="white")
 	draw.text((20, 600), "EN LA RE PERA", font=font, fill="white")
 	draw.text((50, 270), nombre+'\n'+apellido, font=font2, fill="white")
-
+	draw.text((410, 225), "Codigo de\nEntrada", font=font3, fill="white")
 	"""Almacenamiento de la entrada generada con el nombre y apellido del invitado en la carpeta predeterminada"""
 	reducida.save(os.getcwd()+'/entradas_generadas/'+nombre+'-'+apellido+".jpg")
 	#except:
