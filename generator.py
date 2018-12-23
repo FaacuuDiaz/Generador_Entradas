@@ -67,11 +67,11 @@ for qr in codigos:
 	imagen = Image.open(os.getcwd()+'/ImagenesFondo/'+img_fondo)
 	qr_imagen = Image.open(os.getcwd()+'/CodigosQR/'+qr)
 	"""imagen QR reducida a un tamaño (X,Y)"""
-	qr_imagen = qr_imagen.resize((170,170))
+	qr_imagen = qr_imagen.resize((250,250))
 	"""imagen de fondo de entrada reducida a un tamaño (X,Y)"""
 	reducida = imagen.resize((600,700))
 	"""Pegado de la imagen QR a la imagen de la entrada"""
-	reducida.paste(qr_imagen,(410,280))
+	reducida.paste(qr_imagen,(350,280))
 	"""Configuraciones para poder realizar la incorporacion del texto a la imagen"""
 	draw = ImageDraw.Draw(reducida)
 	font = ImageFont.truetype(path,80) #los parametros son el path de la fuente y el tamaño de la fuente
